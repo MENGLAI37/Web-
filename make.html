@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页制作</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <style>
+        body .shell-main-nav ul .nav-box {
+            left: 240px;
+        }
+
+        body .shell-main {
+            margin-bottom: 0;
+        }
+
+        body .shell-main-nav {
+            margin-bottom: 0;
+        }
+        
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(to bottom, #a1e6ff, #a1e6ff);
+            height: 700px;
+        }
+
+        header img {
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        header h2 {
+            font: 100 60px '';
+            margin-bottom: 20px;
+            font-family: font;
+            letter-spacing: 5px;
+            border-bottom: 2px solid rgb(134, 134, 118);
+            color: #ffffff;
+        }
+
+        header p {
+            font: 100 30px '';
+            letter-spacing: 5px;
+        }
+
+        .h-b {
+            display: flex;
+            justify-content: space-evenly;
+            width: 90%;
+
+        }
+
+        .h-b p {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .h-b-l,
+        .h-b-r {
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* ------------------------------------------------------------------ */
+        footer {
+            width: 1430px; 
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border: 1px rgba(0, 0, 0, 0.187) solid;
+            margin: 20px 0;
+        }
+        
+        .left {
+            width: 70%;
+
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left p {
+            text-align: left;
+            letter-spacing: 2px;
+            margin-top: 30px;
+            font: 600 25px '';
+            color: rgb(147, 145, 142);
+        }
+
+        .top {
+            margin: 30px 0;
+        }
+
+        .top table {
+            margin: 30px 0;
+            width: 100%;
+            border-collapse: collapse;
+            border: rgba(0, 0, 0, 0.216);
+        }
+
+        .top table td {
+            padding: 3px 10px;
+        }
+
+        .top table th {
+            background-color: rgb(248, 248, 248);
+        }
+
+        .left h2,
+        .right h2 {
+            font-size: 30px;
+            position: relative;
+            width: 100%;
+            /* height: 30px; */
+        }
+
+        .left h2::after,
+        .right h2::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -20px;
+            background-color: rgb(100, 160, 240);
+            width: 15px;
+            height: 100%;
+            top: 0;
+        }
+
+        .right h2::after {
+            left: 0;
+        }
+
+        .right h2 {
+            padding: 0 20px;
+            font-size: 20px;
+        }
+
+        .left h2::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            background-color: rgba(0, 0, 0, 0.223)
+        }
+
+        .left span {
+            font-size: 15px;
+        }
+
+        .imgs {
+            width: 100%;
+            display: flex;
+        }
+
+        .imgs img {
+            width: 25%;
+        }
+
+        .right {
+            width: 25%;
+            padding: 10px;
+        }
+
+        .right img {
+            width: 100%;
+            margin: 30px 0;
+        }
+
+        .bottom {
+            position: sticky;
+            top: 20px;
+            padding: 0px  10px;
+        }
+
+        .b {
+            width: 100%;
+            background-color: #fff;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border: rgba(0, 0, 0, 0.216) 1px solid;
+        }
+        @media (max-width:1000px){
+            .h-b-r,.h-b-l,.right{
+                display: none;
+            }
+            .content{
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="shell-main">
+            <div class="shell-main-nav">
+                <div class="logo">
+                    <img src="./image/logo.jpg" alt="">
+                    <span>郭吉岩</span>
+                </div>
+                <ul>
+                    <li><a href="./index.html">关于我们</a></li>
+                    <li><a href="./Template.html">成员介绍</a></li>
+                    <li><a href="./make.html">活动介绍</a></li>
+                    <li><a href="./painter.html">未来展望</a></li>
+                    <li><a href="./Login.html">登录</a></li>
+                    <div class="nav-box"></div>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <h2>科创部的快乐时光</h2>
+            <!-- <p>欢声与笑语</p> -->
+            <div class="h-b">
+                <div class="h-b-l">
+                    <div class="h-b-l-h">
+                        <p>趣味运动会</p>
+                        <span>在2022年11月19日星期六14：00，为更好地让新成员融入到科协的大家庭中，科协各部门成员齐聚中苑操场，迎来了一场别开生面的趣味运动会。</span>
+                    </div>
+                    
+                </div>
+                <img src="./image/活动1.jpg" alt="">
+                <div class="h-b-r">
+                    <div class="h-b-r-h">
+                        <p>第一次团建</p>
+                        <span>在2022年11月26日星期六18：30，为了更好地让新成员融入科创部的大家庭中，挑战杯科创部的成员齐聚专三四楼草坪，迎来了第一次团建。</span>
+                    </div>
+                   
+                </div>
+            </div>
+        </header>
+        <footer id="footer1">
+            <div class="content">
+                <div class="bottom">
+                    <video width="420" height="200" controls autoplay>
+                        <source src="image/video/活动1.mp4" type="video/mp4">
+                        <object data="活动1.mp4" width="320" height="240">
+                            <embed width="420" height="200" src="image/video/活动1.mp4">
+                        </object>
+                    </video>
+                </div>
+                <div class="bottom">
+                    <video width="420" height="200" controls autoplay>
+                        <source src="image/video/活动2.mp4" type="video/mp4">
+                        <object data="活动2.mp4" width="320" height="240">
+                            <embed width="420" height="200" src="image/video/活动2.mp4">
+                        </object>
+                    </video>
+                </div>
+                <div class="bottom">
+                    <video width="420" height="200" controls autoplay>
+                        <source src="image/video/活动3.mp4" type="video/mp4">
+                        <object data="活动3.mp4" width="320" height="240">
+                            <embed width="420" height="200" src="image/video/活动3.mp4">
+                        </object>
+                    </video>
+                </div>
+            </div>
+            
+        </footer>
+
+        <footer id="footer2">
+            <div class="content">
+                <div class="bottom">
+                    <video width="420" height="200" controls autoplay>
+                        <source src="image/video/活动4.mp4" type="video/mp4">
+                        <object data="活动4.mp4" width="320" height="240">
+                            <embed width="420" height="200" src="image/video/活动4.mp4">
+                        </object>
+                    </video>
+                </div>
+                <div class="bottom">
+                    <video width="420" height="200" controls autoplay>
+                        <source src="image/video/活动5.mp4" type="video/mp4">
+                        <object data="活动5.mp4" width="320" height="240">
+                            <embed width="420" height="200" src="image/video/活动5.mp4">
+                        </object>
+                    </video>
+                </div>
+                <div class="bottom">
+                    
+                    <video width="420" height="200" controls autoplay>
+                        <source src="image/video/活动6.mp4" type="video/mp4">
+                        <object data="活动6.mp4" width="320" height="240">
+                            <embed width="420" height="200" src="image/video/活动6.mp4">
+                        </object>
+                    </video>
+                </div>
+            </div>
+
+        </footer>
+        <div class="shell-main-footer">
+            <span>挑战杯科创部</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
